@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Profile card component</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+
+    :root {
+      box-sizing: border-box;
+    }
+
+    *,
+    ::after,
+    ::before {
+      box-sizing: inherit;
+      margin: 0px;
+    }
+
+    .page-container {
+      display: flex;
+      height: 100vh;
+      width: 100vw;
+    }
+
+    .page-container--bg-img {
+      background-color: hsl(185, 75%, 39%);
+      /* background-image: url('/images/bg-pattern-bottom.svg'); */
+    }
+
+    .page-container--center {
+      justify-content: center;
+      align-items: center;
+    }
+
+    .card {
+      display: flex;
+      width: 250px;
+      background-color: white;
+      box-shadow: 1px 1px 20px rgb(55, 55, 55);
+    }
+
+    .card--rounded-corners {
+      border-radius: 12px;
+    }
+
+    .card--center {
+      justify-content: center;
+      align-items: center;
+    }
+
+    .card--stack {
+      flex-direction: column;
+    }
+
+    .card--text-center {
+      text-align: center;
+    }
+
+    .card--space-evenly {
+      justify-content: space-between;
+    }
+
+    .card--bg-image {
+      background-image: url('/images/bg-pattern-card.svg');
+      background-repeat: no-repeat;
+      background-size: 250px 100px;
+    }
+
+    .card__profile-pic {
+      padding-top: 4em;
+    }
+
+    .card__profile-pic--img-border {
+      border-radius: 50%;
+      border: 0.2em solid white;
+    }
+
+    .card__info {
+      padding-top: 1em;
+      padding-bottom: 0.7em;
+    }
+
+    .card__info--text-lightgray {
+      font-size: 1em;
+      color: hsl(0, 0%, 59%);
+    }
+
+    .card__info--text-lightgray-small {
+      font-size: 0.8em;
+      color: hsl(0, 0%, 59%);
+    }
+
+    .card__info--md-line-height {
+      line-height: 2.5em;
+    }
+
+    .card__stats {
+      display: flex;
+      width: 100%;
+    }
+
+    .card__stats--center {
+      justify-content: center;
+      align-items: center;
+    }
+
+    .card__stats--gap {
+      gap: 2em;
+    }
+
+    .card__stats--padding {
+      padding-top: 1.2em;
+      padding-bottom: 1.2em;
+    }
+
+    .card__stats--border-top {
+      border-top: 1px solid hsl(0, 0%, 59%);
+    }
+
+    .card__stats--top-text {
+      text-align: center;
+    }
+
+    .card__stats--btm-text {
+      font-size: 0.6em;
+      color: hsl(0, 0%, 59%);
+      text-align: center;
+      padding-top: 0.3em;
+    }
+
+  </style>
+</head>
+<body>
+  <div class="page-container page-container--center page-container--bg-img">
+    <div class="card card--center card--stack card--bg-image card--rounded-corners">
+      <div class="card__profile-pic card--center">
+        <img class="card__profile-pic--img-border" width="70" height="70" src="/images/image-victor.jpg">
+      </div>
+      <div class="card__info card--text-center">
+        <p>Victor Crest <span class="card__info--text-lightgray">26</span></p>
+        <p class="card__info--text-lightgray-small card__info--md-line-height">London</p>
+      </div>
+      <div class="card__stats card__stats--center card__stats--gap card__stats--padding card__stats--border-top">
+        <div>
+          <p class="card__stats--top-text">80K</p>
+          <p class="card__stats--btm-text">Followers</p>
+        </div>
+        <div>
+          <p class="card__stats--top-text">803K</p>
+          <p class="card__stats--btm-text">Likes</p>
+        </div>
+        <div>
+          <p class="card__stats--top-text">1.4K</p>
+          <p class="card__stats--btm-text">Photos</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
